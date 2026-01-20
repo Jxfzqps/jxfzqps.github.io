@@ -1,67 +1,70 @@
 html {
-   background:url(images/background.jpg) fixed;
+    background: url(images/background.jpg) fixed;
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-size: 12pt;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 12pt;
 
-  background:#FFFFFF;
-  color:#252525;
-  -webkit-text-size-adjust:100%;
-  width: 100%;
-  max-width:1000px;
+    background: #FFFFFF;
+    color: #252525;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+    max-width: 1000px;
 
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-top: 0px; */
-  margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 0px; */
+    margin-bottom: 50px;
 
-  /* padding-top: 40px; */
-  padding-left: 40px;
-  padding-right: 40px;
+    /* padding-top: 40px; */
+    padding-left: 40px;
+    padding-right: 40px;
 
-  -moz-box-shadow: 0 2px 7px #CCCCCC;
-  -webkit-box-shadow: 0 2px 7px #CCCCCC;
-  box-shadow: 0 2px 7px #CCCCCC;
-}pa
+    -moz-box-shadow: 0 2px 7px #CCCCCC;
+    -webkit-box-shadow: 0 2px 7px #CCCCCC;
+    box-shadow: 0 2px 7px #CCCCCC;
+}
 
-
+pa
 /* ------------------------------------------------------------------*/
 /* ?????????????? */
 
 #intro {
-  padding: 15px 0px;
+    padding: 15px 0px;
 }
 
 #title {
-  padding: 15px 0px;
+    padding: 15px 0px;
 }
 
 /* ------------------------------------------------------------------*/
 /* appearance of links */
 
 a {
-  color: #2244ee;
-  text-decoration: none;
+    color: #2244ee;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #2244ee;
-  text-decoration: none;
+    color: #2244ee;
+    text-decoration: none;
 }
 
 a:visited {
-  color: #2233ee;
-  text-decoration: none;
+    color: #2233ee;
+    text-decoration: none;
 }
 
 
 /* ------------------------------------------------------------------*/
 /* image blocks */
 
-.mainTitleImage, .abstractImage, .projectImage, .paperImage {
+.mainTitleImage,
+.abstractImage,
+.projectImage,
+.paperImage {
     display: inline-block;
     width: 40%;
     padding-right: 20px;
@@ -69,9 +72,13 @@ a:visited {
     vertical-align: middle;
 }
 
-.mainTitleImage img, .abstractImage img, .projectImage img, .paperImage img {
+.mainTitleImage img,
+.abstractImage img,
+.projectImage img,
+.paperImage img {
     max-width: 100%;
-    max-height: 350px; /* not to high images */
+    max-height: 350px;
+    /* not to high images */
 }
 
 .mainTitleImage {
@@ -80,7 +87,7 @@ a:visited {
 }
 
 .projectImage {
-    width: 30%;
+    width: 60%;
     padding-bottom: 15px;
 }
 
@@ -90,13 +97,17 @@ a:visited {
 }
 
 .mainTitleImage img {
-    max-height: 550px; /* not to high images */
+    max-height: 550px;
+    /* not to high images */
 }
 
 /* ------------------------------------------------------------------*/
 /* blocks for text (title and content) */
 
-.mainTitleTextBlock, .abstractTextBlock, .projectTextBlock, .paperTextBlock {
+.mainTitleTextBlock,
+.abstractTextBlock,
+.projectTextBlock,
+.paperTextBlock {
     display: inline-block;
     padding-bottom: 25px;
     width: 55%;
@@ -123,7 +134,8 @@ a:visited {
 .lineSeparatedBlock {
     width: 100%;
     border-top: 2pt solid #CCCCCC;
-    padding-top: 25px; /* space below line */
+    padding-top: 25px;
+    /* space below line */
     padding-bottom: 25px;
 }
 
@@ -131,13 +143,15 @@ a:visited {
 .projectInfo {
     width: 100%;
     border-bottom: 1pt solid #F0F0F0;
-    padding-top: 15px; /* space below line */
+    padding-top: 15px;
+    /* space below line */
 }
 
 .paperInfo {
     width: 100%;
     border-bottom: 1pt solid #F0F0F0;
-    padding-top: 15px; /* space below line */
+    padding-top: 15px;
+    /* space below line */
 }
 
 /* ------------------------------------------------------------------*/
@@ -161,32 +175,39 @@ a:visited {
 }
 
 /* Short description for the project list. */
-.projectShortInfo, .content {
-    padding-bottom: 10px; /* Spacing between text. */
+.projectShortInfo,
+.content {
+    padding-bottom: 10px;
+    /* Spacing between text. */
 }
 
 /* Name of the project. */
 .projectName {
     font-weight: bold;
-    padding-bottom: 10px; /* Spacing between text. */
+    padding-bottom: 10px;
+    /* Spacing between text. */
 }
 
 .paperName {
     font-weight: bold;
-    padding-bottom: 10px; /* Spacing between text. */
+    padding-bottom: 10px;
+    /* Spacing between text. */
 }
 
 .paperConferenceInfo {
-    padding-bottom: 10px; /* Spacing between text. */
+    padding-bottom: 10px;
+    /* Spacing between text. */
     font-style: italic
 }
 
 .paperAuthorInfo {
-    padding-bottom: 10px; /* Spacing between text. */
+    padding-bottom: 10px;
+    /* Spacing between text. */
 }
 
 .paperLinks {
-    padding-bottom: 10px; /* Spacing between text. */
+    padding-bottom: 10px;
+    /* Spacing between text. */
 }
 
 /* ------------------------------------------------------------------*/
@@ -203,11 +224,12 @@ a:visited {
 
 /* block for displaying a video */
 .videoWrapper {
-	position: relative;
+    position: relative;
     /* padding defines video position inside video player */
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 0px;
-	height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 0px;
+    height: 0;
     /* margin used to add spacing above and below the video player */
     margin-top: 10px;
     margin-bottom: 10px;
@@ -215,29 +237,37 @@ a:visited {
 
 /* iframe used inside videoWrapper should fill the entire space */
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* ------------------------------------------------------------------*/
 /* classes for responsive design */
 
 @media (max-device-width: 768px) {
+
     /* use full width for image and show text below */
-    .mainTitleImage, .abstractImage, .projectImage, .paperImage {
+    .mainTitleImage,
+    .abstractImage,
+    .projectImage,
+    .paperImage {
         display: block;
         width: 100%;
         padding-right: 0px;
     }
 
     .mainTitleImage img {
-        max-height: 350px; /* not to high images */
+        max-height: 350px;
+        /* not to high images */
     }
 
-    .mainTitleTextBlock, .abstractTextBlock, .projectTextBlock, .paperTextBlock {
+    .mainTitleTextBlock,
+    .abstractTextBlock,
+    .projectTextBlock,
+    .paperTextBlock {
         display: block;
         width: 100%;
     }
@@ -251,7 +281,9 @@ a:visited {
         font-size: 1.6em;
     }
 
-    .mainTitle, .title, .subtitle {
+    .mainTitle,
+    .title,
+    .subtitle {
         font-size: 1.6em;
     }
 }
