@@ -1,0 +1,36 @@
+PS D:\jxfzqps.github.io-main> git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   data/Qian_Peisen_CV_UIUC.pdf
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\jxfzqps.github.io-main> git -add .
+unknown option: -add
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+PS D:\jxfzqps.github.io-main> git add . 
+PS D:\jxfzqps.github.io-main> git commit -m
+error: switch `m' requires a value
+PS D:\jxfzqps.github.io-main> git commit -m "CV_updated_20260313"
+[main 86e92fa] CV_updated_20260313
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS D:\jxfzqps.github.io-main> git push -u origin main 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 191.63 KiB | 38.33 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Jxfzqps/jxfzqps.github.io.git
+   5bea5b7..86e92fa  main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\jxfzqps.github.io-main> 
