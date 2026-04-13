@@ -6,6 +6,17 @@
     <meta content="text/html; charset=windows-1252" http-equiv="content-type" charset="UTF-8">
     <title>Peisen Qian</title>
     <link rel="stylesheet" type="text/css" href="resources/style.css">
+
+    <!-- ✅ Added global image hover effect -->
+    <style>
+        img {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        img:hover {
+            transform: scale(1.04);
+        }
+    </style>
 </head>
 
 <body>
@@ -15,7 +26,7 @@
 
         <!-- Left: Profile Image -->
         <div style="flex: 0 0 220px; margin-right: 30px; margin-top: 15px;">
-            <img src="images/portrait.jpg" alt="Peisen Qian" style="width: 100%; height: auto; border-radius: 8px;">
+            <img src="images/portrait.jpg" alt="Peisen Qian" style="width: 100%; height: auto; border-radius: 12px;">
         </div>
 
         <!-- Right: Text Content -->
@@ -73,74 +84,90 @@
         <!-- Publications -->
         <a name="Publications"></a>
         <div class="lineSeparatedBlock">
-            <h2 style="font-size: 28px;">Publications</h2>
+            <h2 style="font-size: 28px; text-align: center;">Publications</h2>
 
-            <div class="content">
+            <div class="content" style="text-align: center;">
                 * denotes for first or co-first author
             </div>
 
-            <div class="projectInfo">
+            <!-- First Paper -->
+            <div class="projectInfo"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+
                 <div class="projectImage">
                     <a target="_top" href="https://pubs.acs.org/doi/full/10.1021/acs.analchem.5c01310">
-                        <figure class="image" style="text-align: center; margin: 0;">
-                            <img title="Clocks" alt="" src="images/SECM_kinetic_relation.png">
+                        <figure class="image" style="margin: 0;">
+                            <img title="Clocks" alt="" src="images/SECM_kinetic_relation.png"
+                                style="display: block; margin: 0 auto;">
                         </figure>
                     </a>
                 </div>
-                <div class="projectTextBlock">
+
+                <div class="projectTextBlock" style="max-width: 750px;">
                     <div class="projectName">
                         <a target="_top" href="https://pubs.acs.org/doi/full/10.1021/acs.analchem.5c01310">
                             Scanning Electrochemical Microscopy for Kinetic Investigations in Viscous Deep Eutectic
                             Solvents: Identifying Practical Approach Curves and Deviations from Electron Transfer Models
                         </a>
                     </div>
+
                     <div class="projectShortInfo">
                         <strong>Qian, P.*</strong>; Cao, G.; Muñoz, M.; Vura-Weis, J.; Gurkan, B. E.; Peng, Z.;
                         Rodríguez-López, J.
                     </div>
+
                     <div class="projectShortInfo">
                         <em>Analytical Chemistry</em>, <strong>2025</strong>, <em>97</em> (30), 16239-16249.
                         <a target="_top" href="https://pubs.acs.org/doi/full/10.1021/acs.analchem.5c01310"> Read
                             more...</a>
                     </div>
                 </div>
+
             </div>
 
-            <div class="projectInfo">
+            <!-- Second Paper -->
+            <div class="projectInfo"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+
                 <div class="projectImage">
                     <a target="_top" href="https://www.nature.com/articles/s41467-025-62915-3">
-                        <figure class="image" style="text-align: center; margin: 0;">
-                            <img title="Fe Kinetics" alt="" src="images/Fe_kinetics.png">
+                        <figure class="image" style="margin: 0;">
+                            <img title="Fe Kinetics" alt="" src="images/Fe_kinetics.png"
+                                style="display: block; margin: 0 auto;">
                         </figure>
                     </a>
                 </div>
-                <div class="projectTextBlock">
+
+                <div class="projectTextBlock" style="max-width: 750px;">
                     <div class="projectName">
                         <a target="_top" href="https://www.nature.com/articles/s41467-025-62915-3">
                             Supramolecular Chirality Largely Modulates Chemical Doping of Conjugated Polymers
                         </a>
                     </div>
+
                     <div class="projectShortInfo">
                         Xu, Z.*; Saiev, S.*; <strong>Qian, P.*</strong>; Nabei, Y.*; Wang, Z.; Rinehart, J. M.;
                         Österholm, A. M.; Jones, A. L.; Lee, J.-H.; Hwang, C.; Wang, S.; Sun, R.; Shin, D.; Jeon, S.;
                         Elangovan, K. E.; Vura-Weis, J.; Coropceanu, V.; Rodríguez-López, J.; Reynolds, J. R.; Sun, D;
                         Brédas, J.-L.; Diao, Y.
                     </div>
+
                     <div class="projectShortInfo">
                         <em>Nature Communications</em>, <strong>2025</strong>, <em>16</em> (1), 8381.
                         <a target="_top" href="https://www.nature.com/articles/s41467-025-62915-3"> Read more...</a>
                     </div>
                 </div>
+
             </div>
 
-            <div class="projectInfo">
-                <!-- Other Publications -->
+            <!-- Other Publications -->
+            <div class="projectInfo" style="text-align: center;">
+
                 <div class="content" style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">
                     Other Publications
                 </div>
 
-                <!-- Publications -->
-                <div class="projectShortInfo" style="max-width: 700px;">
+                <div class="projectShortInfo">
                     5. Muñoz, M.; Chen, M. S.; de Araujo Lima e Souza, G.; Simunovic, T.; Khokhar, V.; <strong>Qian,
                         P.</strong>; Wainright, J.; Savinell, R.; Parnell, A.; Parnell, S.; Kilbride, R. C.;
                     Zawodzinski, T.
@@ -152,14 +179,14 @@
                     <a href="https://doi.org/10.1073/pnas.2530367122" target="_blank"> Read more...</a>
                 </div>
 
-                <div class="projectShortInfo" style="max-width: 700px;">
+                <div class="projectShortInfo">
                     4. Putnam, S. T.; Santiago-Carboney, A.; <strong>Qian, P.</strong>; Rodríguez-López, J. Scanning
                     Electrochemical Microscopy: An Evolving Toolbox for Revealing the Chemistry within Electrochemical
                     Processes. <em>Analytical Chemistry</em> <strong>2025</strong>, <em>97</em> (15), 8147-8181. <a
                         href="https://doi.org/10.1021/acs.analchem.4c06996" target="_blank"> Read more...</a>
                 </div>
 
-                <div class="projectShortInfo" style="max-width: 700px;">
+                <div class="projectShortInfo">
                     3. Asserghine, A.; Baby, A.; Putnam, S. T.; <strong>Qian, P.</strong>; Gao, E.; Zhao, H.;
                     Rodríguez-López, J. In Situ Detection of Reactive Oxygen Species Spontaneously Generated on Lead
                     Acid
@@ -169,16 +196,16 @@
                         target="_blank"> Read more...</a>
                 </div>
 
-                <div class="projectShortInfo" style="max-width: 700px;">
+                <div class="projectShortInfo">
                     2. Shang, Y.; Wang, P.; Jia, L.; Li, X.; Lian, W.; <strong>Qian, P.</strong>; Chen, M.; Chen, T.;
                     Lu,
                     Y.; Yang, S. Synchronous Defect Passivation of All-Inorganic Perovskite Solar Cells Enabled by
                     Fullerene
                     Interlayer. <em>Nano Research Energy</em> <strong>2023</strong>, <em>2</em> (3), e9120073. <a
-                        href="https://doi.org/10.26599/nre.2023.9120073" target="_blank"> Read more...</a>
+                        href=" https://doi.org/10.26599/nre.2023.9120073" target="_blank"> Read more...</a>
                 </div>
 
-                <div class="projectShortInfo" style="max-width: 700px;">
+                <div class="projectShortInfo">
                     1. Hu, W.; Wen, Z.; Xin, Y.; <strong>Qian, P.</strong>; Lian, W.; Li, X.; Shang, Y.; Wu, X.; Chen,
                     T.;
                     Lu, Y.; Wang, M.; Yang, S. In Situ Surface Fluorination of TiO2 Nanocrystals Reinforces Interface
@@ -186,9 +213,8 @@
                     Ultraviolet-Light Stability. <em>Advanced Science</em> <strong>2021</strong>, <em>8</em> (10). <a
                         href="https://doi.org/10.1002/advs.202004662" target="_blank"> Read more...</a>
                 </div>
+
             </div>
-
-
 
         </div>
     </div>
@@ -197,16 +223,22 @@
         <!-- Current projects -->
         <a name="Selected Current Projects"></a>
         <div class="lineSeparatedBlock">
-            <h2 style="font-size: 28px;">Selected Current Project (s)</h2>
+            <h2 style="font-size: 28px; text-align: center;">
+                Selected Current Project(s)
+            </h2>
 
-            <div class="projectInfo">
+            <!-- Project 1 -->
+            <div class="projectInfo"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+
                 <div class="projectImage">
-                    <figure class="image" style="text-align: center; margin: 0;">
-                        <img title="Clocks" alt="" src="images/PCET_MHC_kinetics.png">
+                    <figure class="image" style="margin: 0;">
+                        <img title="Clocks" alt="" src="images/PCET_MHC_kinetics.png"
+                            style="display: block; margin: 0 auto;">
                     </figure>
-
                 </div>
-                <div class="projectTextBlock">
+
+                <div class="projectTextBlock" style="max-width: 750px;">
                     <div class="projectName">
                         Scanning Electrochemical Microscopy Study of Proton-Coupled Electron Transfer Processes in
                         Aqueous and Concentrated Hydrogen-Bonded Electrolytes: Reorganization Energies and Kinetic
@@ -216,14 +248,17 @@
 
             </div>
 
-            <div class="projectInfo">
-                <div class="projectImage">
-                    <figure class="image" style="text-align: center; margin: 0;">
-                        <img title="Clocks" alt="" src="images/SERDS_setup.png">
-                    </figure>
+            <!-- Project 2 -->
+            <div class="projectInfo"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center;">
 
+                <div class="projectImage">
+                    <figure class="image" style="margin: 0;">
+                        <img title="Clocks" alt="" src="images/SERDS_setup.png" style="display: block; margin: 0 auto;">
+                    </figure>
                 </div>
-                <div class="projectTextBlock">
+
+                <div class="projectTextBlock" style="max-width: 750px;">
                     <div class="projectName">
                         An Affordable Shifted-Excitation Raman Difference Spectroscopy (SERDS) Setup: Construction,
                         Noise Analysis, and Detection Limits.
@@ -231,8 +266,44 @@
                 </div>
 
             </div>
+
         </div>
     </div>
+
+    <div>
+        <!-- Hobbies & Interests -->
+        <a name="Hobbies & Interests"></a>
+
+        <div class="lineSeparatedBlock">
+
+            <h2 style="font-size: 28px; text-align: center;">
+                Hobbies & Interests
+            </h2>
+
+            <div class="projectInfo"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+
+                <div class="projectImage">
+                    <figure class="image" style="margin: 0;">
+                        <a href="flute.html">
+                            <img title="Clocks" alt="" src="flute_images/Peisen_flute0.jpg"
+                                style="display: block; margin: 0 auto; border-radius: 12px;">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="projectTextBlock" style="max-width: 750px;">
+                    <div class="projectName">
+                        Flute
+                        <a href="flute.html" style="color: blue; text-decoration: underline; font-weight: bold;">
+                            See more details...
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 

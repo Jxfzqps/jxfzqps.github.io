@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flute Gallery</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fafafa;
+            font-size: 18px;
+        }
+
+        h1 {
+            margin-top: 35px;
+            font-size: 38px;
+            letter-spacing: 1px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            padding: 40px 10px;
+        }
+
+        .gallery img {
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+            transition: transform 0.2s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        .img1 {
+            max-width: 40%;
+        }
+
+        .img2 {
+            max-width: 75%;
+        }
+
+        .img3 {
+            max-width: 40%;
+        }
+
+        .img4 {
+            max-width: 75%;
+        }
+
+        .img5 {
+            max-width: 75%;
+        }
+
+        .img6 {
+            max-width: 75%;
+        }
+
+        .back {
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #333;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .back a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flute</h1>
+    <p style="font-size: 24px;">
+        During my time at USTC, I played the flute in the university's Philharmonic Orchestra.
+    </p>
+    <div class="gallery">
+
+        <img class="img1" src="flute_images/Peisen_flute0.jpg" alt="Flute 0">
+        <img class="img2" src="flute_images/Peisen_flute1.jpg" alt="Flute 1">
+        <img class="img3" src="flute_images/Peisen_flute2.jpg" alt="Flute 2">
+        <img class="img4" src="flute_images/Peisen_flute3.png" alt="Flute 3">
+        <img class="img5" src="flute_images/Peisen_flute4.png" alt="Flute 4">
+        <img class="img6" src="flute_images/Peisen_flute5.png" alt="Flute 5">
+
+    </div>
+
+    <div class="back">
+        <a href="index.html">← Back to Home</a>
+    </div>
+
+</body>
+
+</html>
