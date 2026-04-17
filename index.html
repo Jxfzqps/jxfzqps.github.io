@@ -5,14 +5,14 @@
 <head>
     <meta content="text/html; charset=windows-1252" http-equiv="content-type" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Peisen Qian</title>
     <link rel="stylesheet" type="text/css" href="resources/style.css">
-
 
     <style>
         body {
             font-size: 16px;
-            line-height: 1.2;
+            line-height: 1.5;
         }
 
         img {
@@ -21,6 +21,40 @@
 
         img:hover {
             transform: scale(1.04);
+        }
+
+        .main-container {
+            display: flex;
+            align-items: flex-start;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .profile-image {
+            flex: 0 0 220px;
+            margin-right: 30px;
+            margin-top: 15px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 12px;
+            }
+
+            .profile-image {
+                flex: none;
+                width: 45%;
+                margin-right: 0;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -31,8 +65,8 @@
     <div style="display: flex; align-items: flex-start; max-width: 900px; margin: 0 auto;">
 
         <!-- Left: Profile Image -->
-        <div style="flex: 0 0 220px; margin-right: 30px; margin-top: 15px;">
-            <img src="images/portrait.jpg" alt="Peisen Qian" style="width: 100%; height: auto; border-radius: 12px;">
+        <div class="profile-image">
+            <img src="images/portrait.jpg" alt="Peisen Qian">
         </div>
 
         <!-- Right: Text Content -->
