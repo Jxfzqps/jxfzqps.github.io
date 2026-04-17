@@ -2,6 +2,7 @@
     PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 
+
 <head>
     <meta content="text/html; charset=windows-1252" http-equiv="content-type" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,14 @@
     <link rel="stylesheet" type="text/css" href="resources/style.css">
 
     <style>
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
         body {
             font-size: 16px;
-            line-height: 1.5;
+            line-height: 1.2;
         }
 
         img {
@@ -26,7 +32,7 @@
         .main-container {
             display: flex;
             align-items: flex-start;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -42,20 +48,15 @@
             border-radius: 12px;
         }
 
-        @media (max-width: 600px) {
+        .content {
+            margin: 0px 0;
+            line-height: 1.2;
+        }
 
-            .main-container {
-                flex-direction: row;
-                align-items: flex-start;
-                padding: 0 12px;
-                gap: 12px;
-            }
-
-            .profile-image {
-                flex: 0 0 30%;
-                margin-right: 10px;
-                margin-top: 10px;
-            }
+        .lineSeparatedBlock {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -63,7 +64,7 @@
 <body>
 
     <!-- Main container: left image + right text -->
-    <div style="display: flex; align-items: flex-start; max-width: 900px; margin: 0 auto;">
+    <div class="main-container">
 
         <!-- Left: Profile Image -->
         <div class="profile-image">
@@ -71,10 +72,10 @@
         </div>
 
         <!-- Right: Text Content -->
-        <div style="flex: 1;">
+        <div style="flex: 1; padding-top: 20px;">
 
             <!-- Name -->
-            <div class="mainTitle" style="font-size: 34px; font-weight: bold; line-height: 1.2;">
+            <div class="mainTitle" style="font-size: 34px; font-weight: bold">
                 Peisen Qian<br>
                 <span style="font-size: 18px; font-weight: bold;">
                     (<span style="font-style: italic;">Pay Sən Chyen</span>, 钱培森)
@@ -106,17 +107,22 @@
             </div>
 
             <!-- Contact -->
-            <div class="lineSeparatedBlock" style="margin-top: 5px;">
-                <div class="subtitle" style="font-size: 24px; font-weight: bold;">Contact</div>
+            <div class="lineSeparatedBlock">
+
+                <div class="subtitle" style="font-size: 24px; font-weight: bold;">
+                    Contact
+                </div>
+
                 <div class="content">
                     peisenq2 [at] illinois.edu<br>
                     +1 (447)-902-1075 <br>
                     Roger Adams Laboratory 60B, 600 S Mathews Ave, Urbana, IL 61801<br>
-                    <div class="content">
-                        <a target="_blank" href="data/Qian_Peisen_CV_UIUC.pdf"><strong>CV</strong></a>
-                    </div>
+
+                    <a target="_blank" href="data/Qian_Peisen_CV_UIUC.pdf"><strong>CV</strong></a>
                 </div>
+
             </div>
+
 
         </div>
     </div>
@@ -211,7 +217,7 @@
             </div>
 
             <!-- Other Publications -->
-            <div class="projectInfo" style="text-align: center;">
+            <div class="projectInfo" style="text-align: center; border: none;">
 
                 <div class="content" style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">
                     Other Publications
@@ -278,8 +284,7 @@
             </h2>
 
             <!-- Project 1 -->
-            <div class="projectInfo" style="display: flex; flex-direction: column; align-items: stretch; width: 100%;">
-
+            <div class="projectInfo" style="text-align: center;">
                 <div class="projectImage" style="width: 100%; display: flex; justify-content: center;">
 
                     <figure class="image" style="margin: 0; width: 100%; max-width: 650px;">
@@ -299,7 +304,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="projectInfo" style="display: flex; flex-direction: column; align-items: stretch; width: 100%;">
+            <div class="projectInfo" style="text-align: center; border: none;">
 
                 <div class="projectImage" style="width: 100%; display: flex; justify-content: center;">
 
