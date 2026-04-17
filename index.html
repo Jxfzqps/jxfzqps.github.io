@@ -11,13 +11,9 @@
     <link rel="stylesheet" type="text/css" href="resources/style.css">
 
     <style>
-        html {
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-        }
-
         body {
             font-size: 16px;
+            width: 1500px;
             line-height: 1.2;
         }
 
@@ -32,7 +28,7 @@
         .main-container {
             display: flex;
             align-items: flex-start;
-            max-width: 1200px;
+            max-width: 1500px;
             margin: 0 auto;
         }
 
@@ -57,18 +53,6 @@
             padding-top: 10px;
             padding-bottom: 10px;
             margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .profile-image {
-                width: 55%;
-                max-width: 220px;
-                margin: 10px auto 0 auto;
-            }
-
-            .main-container {
-                flex-wrap: wrap;
-            }
         }
     </style>
 </head>
@@ -139,7 +123,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="main-container">
         <!-- Publications -->
         <a name="Publications"></a>
         <div class="lineSeparatedBlock">
@@ -287,7 +271,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="main-container">
         <!-- Current projects -->
         <a name="Selected Current Projects"></a>
         <div class="lineSeparatedBlock">
@@ -337,7 +321,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="main-container">
         <!-- Hobbies & Interests -->
         <a name="Hobbies & Interests"></a>
 
@@ -372,7 +356,6 @@
         </div>
 
     </div>
-
 
 </body>
 
